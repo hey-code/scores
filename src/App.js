@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import List from "./List";
 
 class App extends Component {
   render() {
@@ -10,12 +11,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Scores. Amazing App. You'll Be Surprised. I Promise. This Copy Is Amazing. Really.</h2>
         </div>
-        <ul className="App-intro">
-          <li>amazing</li>
-          <li>awesome</li>
-          <li>terrific</li>
-          <li>splendid</li>
-        </ul>
+        <List />
       </div>
     );
   }
