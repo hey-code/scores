@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import List from "./List";
 import AddScore from "./AddScore";
+import ScoreList from "./ScoreList";
 
 class App extends Component {
   constructor(){
@@ -29,6 +30,7 @@ class App extends Component {
         </div>
         <List data={this.state.teamsList} />
         <AddScore teams={this.state.teamsList} onScoreAdd={this.onScoreAdd.bind(this)} />
+        <ScoreList scores={this.state.scores} />
       </div>
     );
   }
