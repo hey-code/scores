@@ -5,7 +5,7 @@ class List extends Component {
     return (
       <ul className="list-teams">
         {this.props.data.map(team =>
-          <li>{team}</li>
+          <li key={team}>{team}</li>
         )}
       </ul>
     )
